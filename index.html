@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prince Verma | Full Stack Developer & Digital Creator</title>
+
+<meta name="description" content="Prince Verma - Web Developer, App Developer, Video Editor, Graphic Designer & Digital Marketer. Portfolio Website.">
+<meta name="keywords" content="Prince Verma, Web Developer, Video Editor, Digital Marketing, Graphic Designer">
+<meta name="author" content="Prince Verma">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+:root{
+--primary:#8b5cf6;
+--dark:#0f172a;
+--glass:rgba(255,255,255,0.08);
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+
+body{
+background:linear-gradient(135deg,#0f172a,#1e1b4b);
+color:white;
+scroll-behavior:smooth;
+overflow-x:hidden;
+}
+
+/* NAV */
+nav{
+position:fixed;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:rgba(0,0,0,0.3);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+nav h2{color:var(--primary);}
+nav ul{display:flex;gap:30px;list-style:none;}
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:3.5rem;
+color:var(--primary);
+}
+
+.typing{
+font-size:1.3rem;
+margin-top:10px;
+height:30px;
+}
+
+.hero-buttons{
+margin-top:25px;
+}
+
+.btn{
+padding:12px 30px;
+border-radius:30px;
+border:none;
+cursor:pointer;
+font-weight:600;
+margin:5px;
+background:linear-gradient(45deg,#8b5cf6,#a78bfa);
+color:white;
+transition:0.3s;
+}
+
+.btn:hover{transform:scale(1.05);}
+
+/* SECTIONS */
+section{padding:100px 80px;}
+.section-title{
+text-align:center;
+font-size:2.2rem;
+margin-bottom:60px;
+color:var(--primary);
+}
+
+/* GLASS CARD */
+.card{
+background:var(--glass);
+padding:30px;
+border-radius:20px;
+backdrop-filter:blur(10px);
+transition:0.4s;
+}
+.card:hover{transform:translateY(-10px);}
+
+/* SKILLS */
+.skill{margin-bottom:20px;}
+.progress{
+background:#1e293b;
+height:8px;
+border-radius:10px;
+overflow:hidden;
+}
+.progress-bar{
+height:100%;
+width:0;
+background:linear-gradient(45deg,#8b5cf6,#a78bfa);
+transition:2s;
+}
+
+/* PORTFOLIO */
+.filter-btns{text-align:center;margin-bottom:30px;}
+.filter-btns button{
+padding:8px 20px;
+border:none;
+border-radius:20px;
+margin:5px;
+background:var(--primary);
+color:white;
+cursor:pointer;
+}
+
+.portfolio-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+.portfolio-item img{
+width:100%;
+border-radius:15px;
+cursor:pointer;
+}
+
+/* TESTIMONIALS */
+.testimonial-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+/* BLOG */
+.blog-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+/* CONTACT */
+form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+input,textarea{
+padding:12px;
+border-radius:10px;
+border:none;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:30px;
+background:#0f172a;
+}
+
+/* LIGHTBOX */
+#lightbox{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.8);
+justify-content:center;
+align-items:center;
+}
+#lightbox img{max-width:80%;border-radius:20px;}
+
+/* WHATSAPP FLOAT */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 18px;
+border-radius:50%;
+font-size:20px;
+text-decoration:none;
+}
+
+@media(max-width:768px){
+nav{padding:20px;}
+section{padding:80px 20px;}
+.hero h1{font-size:2.5rem;}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2>Prince Verma</h2>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#portfolio">Work</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<div class="hero">
+<h1>Prince Verma</h1>
+<div class="typing" id="typing"></div>
+
+<div class="hero-buttons">
+<button class="btn" onclick="document.getElementById('contact').scrollIntoView()">Hire Me</button>
+<a href="resume.pdf" download class="btn">Download Resume</a>
+</div>
+</div>
+
+<section id="about" data-aos="fade-up">
+<h2 class="section-title">About Me</h2>
+<div class="card">
+Completed 12th in 2025 & ADCA Diploma. Currently pursuing BCA.
+Specialized in Web Development, App Development, Video Editing,
+Graphic Designing, Social Media Management & Digital Marketing.
+</div>
+</section>
+
+<section id="skills">
+<h2 class="section-title">Professional Skills</h2>
+
+<div class="skill">
+<p>Web Development</p>
+<div class="progress"><div class="progress-bar" data-width="95%"></div></div>
+</div>
+
+<div class="skill">
+<p>Video Editing</p>
+<div class="progress"><div class="progress-bar" data-width="90%"></div></div>
+</div>
+
+<div class="skill">
+<p>Graphic Design</p>
+<div class="progress"><div class="progress-bar" data-width="85%"></div></div>
+</div>
+</section>
+
+<section id="portfolio">
+<h2 class="section-title">My Projects</h2>
+
+<div class="portfolio-grid">
+<div class="portfolio-item"><img src="https://via.placeholder.com/400x300" onclick="openLightbox(this.src)"></div>
+<div class="portfolio-item"><img src="https://via.placeholder.com/400x300" onclick="openLightbox(this.src)"></div>
+<div class="portfolio-item"><img src="https://via.placeholder.com/400x300" onclick="openLightbox(this.src)"></div>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Testimonials</h2>
+<div class="testimonial-grid">
+<div class="card">"Amazing work quality and fast delivery!"</div>
+<div class="card">"Professional and creative developer."</div>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Latest Blog</h2>
+<div class="blog-grid">
+<div class="card">How to Build Modern Websites</div>
+<div class="card">Top Video Editing Tips 2026</div>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Contact Me</h2>
+<form action="https://formspree.io/f/mwvnzglk" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" rows="5" placeholder="Message" required></textarea>
+<button class="btn" type="submit">Send Message</button>
+</form>
+</section>
+
+<footer>
+© 2026 Prince Verma | Final Boss Portfolio 👑
+</footer>
+
+<div id="lightbox" onclick="closeLightbox()">
+<img id="lightbox-img">
+</div>
+
+<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp" target="_blank">💬</a>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+AOS.init();
+
+/* Typing */
+const texts=["Full Stack Developer","Creative Designer","Video Editor","Digital Marketer"];
+let count=0,index=0,currentText="",letter="";
+(function type(){
+if(count===texts.length){count=0;}
+currentText=texts[count];
+letter=currentText.slice(0,++index);
+document.getElementById("typing").textContent=letter;
+if(letter.length===currentText.length){setTimeout(()=>{index=0;count++;},1000);}
+setTimeout(type,100);
+})();
+
+/* Skills Animation */
+window.addEventListener("scroll",()=>{
+document.querySelectorAll(".progress-bar").forEach(bar=>{
+bar.style.width=bar.getAttribute("data-width");
+});
+});
+
+/* Lightbox */
+function openLightbox(src){
+document.getElementById("lightbox").style.display="flex";
+document.getElementById("lightbox-img").src=src;
+}
+function closeLightbox(){
+document.getElementById("lightbox").style.display="none";
+}
+</script>
+
+</body>
+</html>
