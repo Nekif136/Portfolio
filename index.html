@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Prince Verma | Web Designer & Developer</title>
+<title>Prince Verma | AI-Powered Web Designer & Developer</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
 
@@ -16,7 +16,6 @@
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 <style>
-
 /* --- GLOBAL --- */
 body{
   margin:0;
@@ -87,7 +86,6 @@ nav a:hover{
   z-index:-1;
 }
 
-/* Buttons */
 .hero-btn{
   padding:14px 28px;
   background:#6366f1;
@@ -102,7 +100,7 @@ nav a:hover{
 
 .hero-btn:hover{
   background:#22d3ee;
-  transform:translateY(-3px);
+  transform:translateY(-3px) scale(1.05);
   box-shadow:0 0 20px #22d3ee;
 }
 
@@ -171,7 +169,7 @@ button{
 
 button:hover{
   background:#22d3ee;
-  transform:translateY(-2px);
+  transform:translateY(-2px) scale(1.05);
   box-shadow:0 0 20px #22d3ee;
 }
 
@@ -206,7 +204,6 @@ button:hover{
   header{flex-direction:column;}
   nav a{margin:10px 0;}
 }
-
 </style>
 </head>
 
@@ -230,9 +227,9 @@ button:hover{
 <section id="hero">
 <canvas id="bgCanvas"></canvas>
 <div>
-<h1>Freelance Web Designer & Developer</h1>
-<p>Helping businesses grow with modern websites, logos and graphic designs.</p>
-<a href="#work" class="hero-btn">Explore Work</a>
+<h1>AI-Powered Web Design & Development</h1>
+<p>Create professional websites and graphics for small businesses that want to grow online.</p>
+<a href="#work" class="hero-btn">View Projects</a>
 </div>
 </section>
 
@@ -241,38 +238,38 @@ button:hover{
 <h2>My Services</h2>
 <div class="grid">
 <div class="card">
-<h3>Website Development</h3>
-<p>Modern responsive websites with smooth animations.</p>
+<h3>AI-Assisted Websites</h3>
+<p>Modern, responsive, animated websites ready to deploy on GitHub Pages.</p>
 </div>
 <div class="card">
-<h3>Logo Design</h3>
-<p>Professional business logos and branding.</p>
+<h3>Branding & Logo Design</h3>
+<p>Custom logos and branding for businesses and startups.</p>
 </div>
 <div class="card">
-<h3>Graphic Design</h3>
-<p>Posters, banners and social media creatives.</p>
+<h3>Graphics & Posters</h3>
+<p>Social media posts, banners, thumbnails, and promotional materials.</p>
 </div>
 </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="work">
-<h2>My Work</h2>
+<h2>Portfolio Projects</h2>
 <div class="grid">
 <div class="card">
 <h3>The Cafe Shop</h3>
-<p>Luxury cafe website UI.</p>
-<a href="https://nekif136.github.io/Cafe/" target="_blank">View</a>
+<p>Responsive landing page UI for a luxury cafe.</p>
+<a href="https://nekif136.github.io/Cafe/" target="_blank">View Live</a>
 </div>
 <div class="card">
 <h3>CMO Transport</h3>
-<p>Logistics dashboard UI.</p>
-<a href="https://nekif136.github.io/CMO-Transport-/" target="_blank">View</a>
+<p>Interactive fleet management dashboard design.</p>
+<a href="https://nekif136.github.io/CMO-Transport-/" target="_blank">View Live</a>
 </div>
 <div class="card">
 <h3>Golden Fitness Gym</h3>
-<p>Fitness landing page.</p>
-<a href="https://nekif136.github.io/golden-fitness-Gym/" target="_blank">View</a>
+<p>Modern fitness landing page with animation and responsive design.</p>
+<a href="https://nekif136.github.io/golden-fitness-Gym/" target="_blank">View Live</a>
 </div>
 </div>
 </section>
@@ -281,9 +278,7 @@ button:hover{
 <section id="about">
 <h2>About Me</h2>
 <p style="max-width:700px;margin:auto;text-align:center">
-Hi I'm <b>Prince Verma</b>, a freelance developer and designer
-who creates modern websites, brand logos and graphics
-for businesses that want to grow online.
+Hi, I'm <b>Prince Verma</b>. I create AI-assisted websites, logos, and graphics for businesses looking to grow online. Fast delivery, premium design, and responsive solutions.
 </p>
 </section>
 
@@ -302,10 +297,10 @@ for businesses that want to grow online.
 <section>
 <h2>My Work Process</h2>
 <div class="grid">
-<div class="card">1. Discussion</div>
-<div class="card">2. Design</div>
-<div class="card">3. Development</div>
-<div class="card">4. Launch</div>
+<div class="card">1. Discuss Project</div>
+<div class="card">2. Design Mockups</div>
+<div class="card">3. Development & Animation</div>
+<div class="card">4. Launch & Deliver</div>
 </div>
 </section>
 
@@ -314,8 +309,13 @@ for businesses that want to grow online.
 <h2>Client Reviews</h2>
 <div class="testimonial">
 ⭐⭐⭐⭐⭐
-<p>Prince created an amazing website for my gym.</p>
+<p>Prince created an amazing website for my gym. Highly recommended!</p>
 <b>Rajesh</b>
+</div>
+<div class="testimonial">
+⭐⭐⭐⭐⭐
+<p>Fast delivery and excellent design quality for our cafe landing page.</p>
+<b>Simran</b>
 </div>
 </section>
 
@@ -325,7 +325,7 @@ for businesses that want to grow online.
 <form id="contact-form">
 <input type="text" name="name" placeholder="Your Name" required>
 <input type="email" name="email" placeholder="Email Address" required>
-<textarea name="message" rows="5" placeholder="Project details"></textarea>
+<textarea name="message" rows="5" placeholder="Project Details" required></textarea>
 <button type="submit">Send Message</button>
 <p id="status"></p>
 </form>
@@ -338,49 +338,48 @@ for businesses that want to grow online.
 </footer>
 
 <script>
-
-/* --- PAGE TRANSITION --- */
+/* PAGE TRANSITION */
 gsap.to("#transition",{y:"-100%",duration:1.2,delay:.3});
 
-/* --- EMAIL JS --- */
-(function(){emailjs.init("YOUR_PUBLIC_KEY");})();
-document.getElementById("contact-form")
-.addEventListener("submit",function(e){
+/* EMAIL JS */
+(function(){ emailjs.init("YOUR_PUBLIC_KEY"); })();
+document.getElementById("contact-form").addEventListener("submit",function(e){
 e.preventDefault();
 emailjs.sendForm("YOUR_SERVICE_ID","YOUR_TEMPLATE_ID",this)
 .then(function(){ document.getElementById("status").innerHTML="Message Sent"; });
 });
 
-/* --- GSAP SCROLL ANIMATION & PARALLAX --- */
+/* GSAP SCROLL ANIMATION WITH PARALLAX */
 gsap.utils.toArray('section').forEach(section=>{
-  gsap.from(section,{opacity:0,y:80,duration:1,scrollTrigger:{trigger:section,start:"top 80%"}})
+  gsap.from(section,{
+    opacity:0,
+    y:80,
+    duration:1,
+    ease:"power2.out",
+    scrollTrigger:{
+      trigger:section,
+      start:"top 80%"
+    }
+  });
 });
 
-/* --- THREE JS 3D TORUS ANIMATION --- */
+/* THREE JS 3D TORUS ANIMATION */
 const scene=new THREE.Scene();
 const camera=new THREE.PerspectiveCamera(75,window.innerWidth/window.innerHeight,0.1,1000);
-const renderer=new THREE.WebGLRenderer({canvas:document.querySelector("#bgCanvas"),alpha:true});
+const renderer=new THREE.WebGLRenderer({canvas:document.querySelector("#bgCanvas"),alpha:true,antialias:true});
 renderer.setSize(window.innerWidth,window.innerHeight);
 camera.position.z=5;
-
 const geo=new THREE.TorusGeometry(1.6,.4,16,100);
 const mat=new THREE.MeshStandardMaterial({color:0x6366f1,wireframe:true});
 const torus=new THREE.Mesh(geo,mat);
 scene.add(torus);
-
 const light=new THREE.PointLight(0x22d3ee,2);
 light.position.set(5,5,5);
 scene.add(light);
-
-function animate(){
-  requestAnimationFrame(animate);
-  torus.rotation.x+=0.004;
-  torus.rotation.y+=0.004;
-  renderer.render(scene,camera);
-}
+function animate(){requestAnimationFrame(animate); torus.rotation.x+=.004; torus.rotation.y+=.004; renderer.render(scene,camera);}
 animate();
 
-/* --- TSPARTICLES INTERACTIVE PARTICLES --- */
+/* INTERACTIVE PARTICLES USING TSPARTICLES */
 tsParticles.load("bgCanvas",{
 particles:{
 number:{value:80,density:{enable:true,value_area:800}},
@@ -396,9 +395,6 @@ events:{onHover:{enable:true,mode:"repulse"},onClick:{enable:true,mode:"push"}}
 },
 retina_detect:true
 });
-
-/* --- HOVER GLOW EFFECTS ADDED VIA CSS --- */
-
 </script>
 
 </body>
