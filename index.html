@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Prince Verma | AI-Powered Web Designer & Developer</title>
 
+<!-- SEO Meta Tags -->
+<meta name="description" content="Prince Verma creates AI-assisted websites, logos, graphics, and social media designs for small businesses to grow online. Fast, responsive, and premium designs.">
+<meta name="keywords" content="AI web design, small business websites, logo design, branding, social media graphics, landing pages, SaaS websites, infographics, Prince Verma">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://nekif136.github.io/Portfolio/">
+
+<!-- Open Graph / Social Media -->
+<meta property="og:title" content="Prince Verma | AI-Powered Web Designer & Developer">
+<meta property="og:description" content="Fast and responsive AI-assisted websites, branding, and graphics for small businesses.">
+<meta property="og:image" content="https://nekif136.github.io/Portfolio/assets/og-image.png">
+<meta property="og:url" content="https://nekif136.github.io/Portfolio/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
 
+<!-- External Libraries -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
@@ -25,198 +39,58 @@ body{
   scroll-behavior:smooth;
   overflow-x:hidden;
 }
+section{padding:100px 10%;position:relative;}
+h1,h2,h3{text-align:center;}
+h1{font-size:50px;margin-bottom:20px;color:#22d3ee;text-shadow:0 0 10px #22d3ee;}
+h2{font-family:"Space Grotesk";font-size:40px;margin-bottom:40px;color:#22d3ee;text-shadow:0 0 10px #22d3ee;}
+h3{margin-bottom:15px;color:#fff;}
+p{line-height:1.7;}
+a{text-decoration:none;color:white;transition:.3s;}
+a:hover{color:#22d3ee;}
+/* NAV */
+header{position:fixed;width:100%;top:0;display:flex;justify-content:space-between;padding:20px 10%;background:rgba(0,0,0,.5);backdrop-filter:blur(10px);z-index:999;}
+nav a{margin-left:20px;}
+@media(max-width:768px){header{flex-direction:column;} nav a{margin:10px 0;}}
 
-section{
-  padding:100px 10%;
-  position:relative;
-}
+/* HERO */
+#hero{height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;}
+#bgCanvas{position:absolute;width:100%;height:100%;top:0;left:0;z-index:-1;}
+.hero-btn{padding:14px 28px;background:#6366f1;border-radius:8px;display:inline-block;margin-top:20px;transition:.3s;box-shadow:0 0 10px #6366f1;}
+.hero-btn:hover{background:#22d3ee;transform:translateY(-3px) scale(1.05);box-shadow:0 0 20px #22d3ee;}
 
-/* --- HEADINGS --- */
-h2{
-  text-align:center;
-  font-family:"Space Grotesk";
-  font-size:40px;
-  margin-bottom:40px;
-  color:#22d3ee;
-  text-shadow:0 0 10px #22d3ee;
-}
+/* GRID & CARDS */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px;}
+.card{background:rgba(255,255,255,.05);padding:25px;border-radius:15px;border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(5px);transition:.4s;position:relative;}
+.card:hover{transform:translateY(-10px) scale(1.05);box-shadow:0 0 30px #22d3ee;}
 
-/* --- NAV --- */
-header{
-  position:fixed;
-  width:100%;
-  top:0;
-  display:flex;
-  justify-content:space-between;
-  padding:20px 10%;
-  background:rgba(0,0,0,.5);
-  backdrop-filter:blur(10px);
-  z-index:999;
-}
+/* TESTIMONIAL */
+.testimonial{background:rgba(255,255,255,.05);padding:20px;border-left:5px solid #6366f1;margin-bottom:20px;border-radius:10px;transition:.3s;}
+.testimonial:hover{box-shadow:0 0 20px #6366f1;}
 
-nav a{
-  color:white;
-  margin-left:20px;
-  text-decoration:none;
-  transition:.3s;
-}
+/* FORM */
+form{max-width:600px;margin:auto;}
+input,textarea{width:100%;padding:14px;margin:10px 0;background:#020617;border:1px solid #334155;color:white;border-radius:8px;}
+button{padding:14px;background:#6366f1;border:none;color:white;border-radius:8px;cursor:pointer;transition:.3s;box-shadow:0 0 8px #6366f1;}
+button:hover{background:#22d3ee;transform:translateY(-2px) scale(1.05);box-shadow:0 0 20px #22d3ee;}
 
-nav a:hover{
-  color:#22d3ee;
-  text-shadow:0 0 8px #22d3ee;
-}
+/* WHATSAPP */
+.whatsapp{position:fixed;bottom:25px;right:25px;background:#25D366;padding:14px 22px;border-radius:40px;color:white;font-weight:bold;z-index:999;box-shadow:0 0 15px #25D366;}
 
-/* --- HERO --- */
-#hero{
-  height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  position:relative;
-  overflow:hidden;
-}
-
-#bgCanvas{
-  position:absolute;
-  width:100%;
-  height:100%;
-  top:0;
-  left:0;
-  z-index:-1;
-}
-
-.hero-btn{
-  padding:14px 28px;
-  background:#6366f1;
-  border-radius:8px;
-  text-decoration:none;
-  color:white;
-  display:inline-block;
-  margin-top:20px;
-  transition:.3s;
-  box-shadow:0 0 10px #6366f1;
-}
-
-.hero-btn:hover{
-  background:#22d3ee;
-  transform:translateY(-3px) scale(1.05);
-  box-shadow:0 0 20px #22d3ee;
-}
-
-/* --- GRID & CARDS --- */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:30px;
-}
-
-.card{
-  background:rgba(255,255,255,.05);
-  padding:25px;
-  border-radius:15px;
-  border:1px solid rgba(255,255,255,.1);
-  backdrop-filter:blur(5px);
-  transition:.4s;
-  position:relative;
-}
-
-.card:hover{
-  transform:translateY(-10px) scale(1.05);
-  box-shadow:0 0 30px #22d3ee;
-}
-
-/* --- TESTIMONIAL --- */
-.testimonial{
-  background:rgba(255,255,255,.05);
-  padding:20px;
-  border-left:5px solid #6366f1;
-  margin-bottom:20px;
-  border-radius:10px;
-  transition:.3s;
-}
-
-.testimonial:hover{
-  box-shadow:0 0 20px #6366f1;
-}
-
-/* --- FORM --- */
-form{
-  max-width:600px;
-  margin:auto;
-}
-
-input,textarea{
-  width:100%;
-  padding:14px;
-  margin:10px 0;
-  background:#020617;
-  border:1px solid #334155;
-  color:white;
-  border-radius:8px;
-}
-
-button{
-  padding:14px;
-  background:#6366f1;
-  border:none;
-  color:white;
-  border-radius:8px;
-  cursor:pointer;
-  transition:.3s;
-  box-shadow:0 0 8px #6366f1;
-}
-
-button:hover{
-  background:#22d3ee;
-  transform:translateY(-2px) scale(1.05);
-  box-shadow:0 0 20px #22d3ee;
-}
-
-/* --- WHATSAPP --- */
-.whatsapp{
-  position:fixed;
-  bottom:25px;
-  right:25px;
-  background:#25D366;
-  padding:14px 22px;
-  border-radius:40px;
-  color:white;
-  text-decoration:none;
-  font-weight:bold;
-  z-index:999;
-  box-shadow:0 0 15px #25D366;
-}
-
-/* --- PAGE TRANSITION --- */
-#transition{
-  position:fixed;
-  width:100%;
-  height:100%;
-  background:#0f172a;
-  top:0;
-  left:0;
-  z-index:2000;
-}
-
-/* --- MEDIA --- */
-@media(max-width:768px){
-  header{flex-direction:column;}
-  nav a{margin:10px 0;}
-}
+/* PAGE TRANSITION */
+#transition{position:fixed;width:100%;height:100%;background:#0f172a;top:0;left:0;z-index:2000;}
 </style>
 </head>
 
 <body>
-
 <div id="transition"></div>
 
 <header>
 <h3>PRINCE VERMA</h3>
 <nav>
 <a href="#hero">Home</a>
-<a href="#expertise">Services</a>
-<a href="#work">Projects</a>
+<a href="#services">Services</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#pricing">Pricing</a>
 <a href="#about">About</a>
 <a href="#testimonials">Reviews</a>
 <a href="#contact">Contact</a>
@@ -229,31 +103,39 @@ button:hover{
 <div>
 <h1>AI-Powered Web Design & Development</h1>
 <p>Create professional websites and graphics for small businesses that want to grow online.</p>
-<a href="#work" class="hero-btn">View Projects</a>
+<a href="#contact" class="hero-btn">Start Your Project</a>
 </div>
 </section>
 
 <!-- SERVICES -->
-<section id="expertise">
+<section id="services">
 <h2>My Services</h2>
 <div class="grid">
 <div class="card">
 <h3>AI-Assisted Websites</h3>
-<p>Modern, responsive, animated websites ready to deploy on GitHub Pages.</p>
+<p>Modern, responsive, animated websites ready to deploy. Fast, SEO-friendly, and fully mobile-optimized.</p>
 </div>
 <div class="card">
 <h3>Branding & Logo Design</h3>
-<p>Custom logos and branding for businesses and startups.</p>
+<p>Custom logos and branding for businesses and startups. Stand out online and attract more customers.</p>
 </div>
 <div class="card">
 <h3>Graphics & Posters</h3>
-<p>Social media posts, banners, thumbnails, and promotional materials.</p>
+<p>Social media posts, banners, thumbnails, and promotional materials designed to engage audiences and boost sales.</p>
+</div>
+<div class="card">
+<h3>Landing Pages</h3>
+<p>High-converting landing pages for products, services, or SaaS solutions, ready to launch.</p>
+</div>
+<div class="card">
+<h3>Infographics & Ad Design</h3>
+<p>Product catalogs, social media ads, and infographics designed for clarity and engagement.</p>
 </div>
 </div>
 </section>
 
-<!-- PROJECTS -->
-<section id="work">
+<!-- PORTFOLIO -->
+<section id="portfolio">
 <h2>Portfolio Projects</h2>
 <div class="grid">
 <div class="card">
@@ -274,6 +156,25 @@ button:hover{
 </div>
 </section>
 
+<!-- PRICING -->
+<section id="pricing">
+<h2>Pricing Packages</h2>
+<div class="grid">
+<div class="card">
+<h3>Landing Page</h3>
+<p>Starting at $150 – High-converting, mobile-ready landing page.</p>
+</div>
+<div class="card">
+<h3>Small Business Website</h3>
+<p>Starting at $300 – Responsive 3-5 page website with branding.</p>
+</div>
+<div class="card">
+<h3>Branding & Graphics</h3>
+<p>Starting at $100 – Logo, infographics, social media designs, and ads.</p>
+</div>
+</div>
+</section>
+
 <!-- ABOUT -->
 <section id="about">
 <h2>About Me</h2>
@@ -283,7 +184,7 @@ Hi, I'm <b>Prince Verma</b>. I create AI-assisted websites, logos, and graphics 
 </section>
 
 <!-- WHY CHOOSE -->
-<section>
+<section id="why">
 <h2>Why Clients Choose Me</h2>
 <div class="grid">
 <div class="card">⚡ Fast Delivery</div>
@@ -294,7 +195,7 @@ Hi, I'm <b>Prince Verma</b>. I create AI-assisted websites, logos, and graphics 
 </section>
 
 <!-- PROCESS -->
-<section>
+<section id="process">
 <h2>My Work Process</h2>
 <div class="grid">
 <div class="card">1. Discuss Project</div>
@@ -337,6 +238,21 @@ Hi, I'm <b>Prince Verma</b>. I create AI-assisted websites, logos, and graphics 
 © 2026 Prince Verma
 </footer>
 
+<!-- STRUCTURED DATA FOR SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Prince Verma",
+  "url": "https://nekif136.github.io/Portfolio/",
+  "sameAs": [
+    "https://www.linkedin.com/in/prince-verma",
+    "https://www.facebook.com/princeverma"
+  ],
+  "jobTitle": "AI-Powered Web Designer & Developer"
+}
+</script>
+
 <script>
 /* PAGE TRANSITION */
 gsap.to("#transition",{y:"-100%",duration:1.2,delay:.3});
@@ -349,21 +265,13 @@ emailjs.sendForm("YOUR_SERVICE_ID","YOUR_TEMPLATE_ID",this)
 .then(function(){ document.getElementById("status").innerHTML="Message Sent"; });
 });
 
-/* GSAP SCROLL ANIMATION WITH PARALLAX */
+/* GSAP SCROLL ANIMATION */
 gsap.utils.toArray('section').forEach(section=>{
-  gsap.from(section,{
-    opacity:0,
-    y:80,
-    duration:1,
-    ease:"power2.out",
-    scrollTrigger:{
-      trigger:section,
-      start:"top 80%"
-    }
-  });
+  gsap.from(section,{opacity:0,y:80,duration:1,ease:"power2.out",
+  scrollTrigger:{trigger:section,start:"top 80%"}});
 });
 
-/* THREE JS 3D TORUS ANIMATION */
+/* THREE JS TORUS */
 const scene=new THREE.Scene();
 const camera=new THREE.PerspectiveCamera(75,window.innerWidth/window.innerHeight,0.1,1000);
 const renderer=new THREE.WebGLRenderer({canvas:document.querySelector("#bgCanvas"),alpha:true,antialias:true});
@@ -379,23 +287,12 @@ scene.add(light);
 function animate(){requestAnimationFrame(animate); torus.rotation.x+=.004; torus.rotation.y+=.004; renderer.render(scene,camera);}
 animate();
 
-/* INTERACTIVE PARTICLES USING TSPARTICLES */
+/* PARTICLES */
 tsParticles.load("bgCanvas",{
-particles:{
-number:{value:80,density:{enable:true,value_area:800}},
-color:{value:"#22C55E"},
-shape:{type:"circle"},
-opacity:{value:0.7},
-size:{value:3,random:true},
-links:{enable:true,color:"#6366EB",distance:150,opacity:0.4,width:1},
-move:{enable:true,speed:1,direction:"none",out_mode:"bounce"}
-},
-interactivity:{
-events:{onHover:{enable:true,mode:"repulse"},onClick:{enable:true,mode:"push"}}
-},
+particles:{number:{value:80,density:{enable:true,value_area:800}},color:{value:"#22C55E"},shape:{type:"circle"},opacity:{value:0.7},size:{value:3,random:true},links:{enable:true,color:"#6366EB",distance:150,opacity:0.4,width:1},move:{enable:true,speed:1,direction:"none",out_mode:"bounce"}},
+interactivity:{events:{onHover:{enable:true,mode:"repulse"},onClick:{enable:true,mode:"push"}}},
 retina_detect:true
 });
 </script>
-
 </body>
 </html>
